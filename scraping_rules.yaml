@@ -1,0 +1,129 @@
+24.hu:
+  feed: 'https://24.hu/rss'
+  extra:
+  - content: "div.u-onlyArticlePages"
+
+444.hu:
+  feed: 'https://444.hu/feed'
+  extra:
+  - content: "div.full-width"
+
+atlatszo.hu:
+  feed: 'https://atlatszo.hu/feed/'
+  extra:
+  - content: "div.the_content"
+
+g7.hu:
+  feed: 'https://g7.hu/feed/'
+  extra:
+  - content: "div.content"
+
+hang.hu:
+  feed: 'https://hang.hu/rss/'
+  extra:
+  - content: "div.entry-content"
+
+index.hu:
+  feed: 'https://index.hu/24ora/rss/'
+  extra:
+  - content: "div.cikk-torzs"
+
+magyarnarancs.hu:
+  feed: 'https://magyarnarancs.hu/rss'
+  extra:
+  - content: "div.article-content"
+
+mfor.hu:
+  feed: 'https://mfor.hu/rss/'
+  extra:
+  - content: "div.news-page-content"
+
+nepszava.hu:
+  feed: 'https://nepszava.hu/feed/'
+  extra:
+  - content: "section.article--left"
+
+telex.hu:
+  feed: 'https://telex.hu/rss'
+  extra:
+  - content: "div.article-html-content"
+
+rtl.hu:
+  feed: 'https://rss.rtl.hu/'
+  extra:
+  - content: "div.static-page__content--body"
+
+szabadeuropa.hu:
+  feed: 'https://www.szabadeuropa.hu/api/'
+  extra:
+  - content: "div#article-content"
+
+valaszonline.hu:
+  feed: 'https://www.valaszonline.hu/feed/'
+  extra:
+  - content: "article.single-article"
+
+origo.hu:
+  feed: 'https://www.origo.hu/contentpartner/rss/origoall/origo.xml'
+  extra:
+  - content: "div.article-content"
+
+pestisracok.hu:
+  feed: 'https://pestisracok.hu/feed/'
+  extra:
+  - content: ".entry"
+
+mandiner.hu:
+  feed: 'https://mandiner.hu/publicapi/hu/rss/mandiner/articles'
+  extra:
+  - content: 'article.left-column'
+
+baon.hu:
+  feed: 'https://www.baon.hu/feed'
+  extra:
+  - content: 'article.left-column'
+
+bama.hu:
+  feed: 'https://www.bama.hu/feed'
+  extra:
+  - content: 'article.left-column'
+
+beol.hu:
+  feed: 'https://www.beol.hu/feed'
+  extra:
+  - content: 'article.left-column'
+
+magyarnemzet.hu:
+  feed: 'https://magyarnemzet.hu/feed'
+  extra:
+  - content: 'div.article'
+
+hirtv.hu:
+  feed: 'https://hirtv.hu/rss'
+  extra:
+  - content: '.article-content'
+
+vg.hu:
+  feed: 'https://www.vg.hu/feed'
+  extra:
+  - content: 'article-content'
+
+figyelo.hu:
+  feed: 'https://figyelo.hu/feed'
+  extra:
+  - content: 'div.enews-article-content'
+
+oroszhirek.hu:
+  feed: 'https://oroszhirek.hu/feed'
+  extra:
+  - content: '.td-post-content'
+
+kuruc.info:
+  feed: 'https://kuruc.info/rss/'
+  extra:
+  - content: '.gallery'
+
+magyarjelen.hu:
+  feed: 'https://feeds.feedburner.com/magyarjelen/rss'
+  extra:
+  - content: '.post-content'
