@@ -33,9 +33,27 @@ A ChatGPT promptolásánál mindig angol nyelvű szöveget használtam, mert abb
 	\caption{Kezdeti prompt (nem teljes válasz)}
 \end{figure}
 
-A ChatGPT kimenetét megvizsgálva és saját tudásomra támaszkodva úgy döntöttem RSS folyamok periódikus letöltésével fogom az új híreket megszerezni. A teljes szöveghez viszont általában csak az cikket tartalmazó oldal letoltése és értelmezése után lehet hozzáférni, erre Beautiiful Soup Python könyvtárat választottam. Az adatok eltárolását az egyszerűség kedvéért egy lokális Sqlite adatbázissal oldottam meg. Végül pedig az adatokat FastApi python könyvtár segítségével tettem elérhetővé egy API endpointon.
+A ChatGPT kimenetét megvizsgálva és saját tudásomra támaszkodva úgy döntöttem RSS folyamok periódikus letöltésével fogom az új híreket megszerezni. A teljes szöveghez viszont általában csak az cikket tartalmazó oldal letoltése és értelmezése után lehet hozzáférni, erre \texttt{Beautiful Soup} Python könyvtárat választottam. Az adatok eltárolását az egyszerűség kedvéért egy lokális Sqlite adatbázissal oldottam meg. Végül pedig az adatokat \texttt{FastApi} python könyvtár segítségével tettem elérhetővé egy API endpointon.
 
 \section{Megoldás}
+
+\subsection{Alapok}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.65\textwidth]{prompt_2.pdf}
+	\caption{Impelementációhoz prompt (nem teljes válasz)}{Ez a prompt persze nem produkált elsőre tökéletesen műdödő szoftvert, bőven volt mit kiegészíteni.}
+\end{figure}
+
+Az elkészült projekt \texttt{feedparser}-t alkalmaz az RSS feed-ek elemzéséhez, \texttt{FastAPI}-t a webes keretrendszerhez, \texttt{SQLAlchemy}-t az ORM támogatáshoz SQLite-al, \texttt{uvicorn}-t az alkalmazás szolgáltatásához, és \texttt{APScheduler}-t az időzített feladatokhoz.
+
+A szoftver ki lett egészítve egy funkcióval a duplikált cikkek kezelésére, amely magában foglalja az egyedi cím és link kombinációk ellenőrzését az adatbázisban, mielőtt azokat hozzáadná. A \texttt{feedparser} által visszaadott \texttt{published\_parsed} dátumokat \texttt{datetime} objektummá alakítottuk, hogy kompatibilisek legyenek az SQLite \texttt{DateTime} típusával.
+
+A programot továbá úgy módosítottam, hogy az rss feedek listáját egy json fájlból olvassa be.
+
+\subsection{Részletesebb adatok parsolása}
+
+Az eddigi megoldást még ki akartam egészíteni azzal, hogy a cikkek teljes szövegét letöltöm, ami alapból nem szokott az RSS folyamban eltárolva lenni.
 
 \section{Verziókövetés}
 
